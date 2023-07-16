@@ -28,7 +28,7 @@ const Button = ({ label, loading, disabled, ...rest }: ButtonProps) => {
         }`}
       >
         {label && (
-          <p className="font-lora whitespace-nowrap text-xl font-bold text-black">
+          <p className="whitespace-nowrap text-xl font-bold text-black">
             {label}
           </p>
         )}
