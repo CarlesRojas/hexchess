@@ -30,6 +30,7 @@ dependencies:
   '@types/react': 18.2.15
   '@types/react-dom': 18.2.7
   autoprefixer: 10.4.14_postcss@8.4.26
+  dotenv: 16.3.1
   drizzle-orm: 0.27.2_postgres@3.3.5
   eslint: 8.45.0
   eslint-config-next: 13.4.10_ko3fmmbeyij36muomfgt2u76xu
@@ -45,7 +46,6 @@ dependencies:
   typescript: 5.1.6
 
 devDependencies:
-  dotenv: 16.3.1
   drizzle-kit: 0.19.5
   prettier: 3.0.0
   prettier-plugin-tailwindcss: 0.4.1_prettier@3.0.0
@@ -1483,7 +1483,7 @@ packages:
   /dotenv/16.3.1:
     resolution: {integrity: sha512-IPzF4w4/Rd94bA9imS68tZBaYyBWSCE47V1RGuMrB94iyTOIEwRmVL2x/4An+6mETpLrKJ5hQkB8W4kFAadeIQ==}
     engines: {node: '>=12'}
-    dev: true
+    dev: false
 
   /dreamopt/0.8.0:
     resolution: {integrity: sha512-vyJTp8+mC+G+5dfgsY+r3ckxlz+QMX40VjPQsZc5gxVAxLmi64TBoVkP54A/pRAXMXsbu2GMMBrZPxNv23waMg==}

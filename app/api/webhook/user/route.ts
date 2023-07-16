@@ -2,7 +2,7 @@ import { createUser, deleteUser } from "@/server/repo/User"
 import { UserWebhookEvent } from "@clerk/nextjs/dist/types/server"
 import { NextRequest, NextResponse } from "next/server"
 import { Webhook, WebhookRequiredHeaders } from "svix"
-export const config = { api: { bodyParser: false } }
+// export const config = { api: { bodyParser: false } }
 
 const webhookSecret = process.env.CLERK_WEBHOOK_SECRET ?? ""
 
