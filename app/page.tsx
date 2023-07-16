@@ -1,28 +1,44 @@
 import Button from "@/components/Button"
+import Page from "@/components/Page"
 import User from "@/components/User"
+import { Route } from "@/shared/Route"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Home() {
   return (
-    <main className="grid h-screen w-screen grid-rows-[minmax(0,_6rem)_minmax(0,_1fr)_minmax(0,_1fr)]">
-      <User />
+    <Page
+      top={<User />}
+      middle={
+        <>
+          <Image
+            src="/hexchess.png"
+            className="w-1/3 max-w-[10rem]"
+            width={512}
+            height={512}
+            alt="HexChess Logo"
+          />
 
-      <div className="flex h-full w-full flex-col items-center justify-center gap-2">
-        <Image
-          src="/hexchess.png"
-          className="w-1/3 max-w-[10rem]"
-          width={512}
-          height={512}
-          alt="HexChess Logo"
-        />
+          <h1 className="text-3xl font-bold opacity-90">HexChess</h1>
+        </>
+      }
+      bottom={
+        <>
+          <Link
+            href={Route.QUICKPLAY}
+            className="hex-clip flex w-2/3 max-w-[20rem] items-center justify-center"
+          >
+            <Button label="Quick Play" />
+          </Link>
 
-        <h1 className="text-3xl font-bold opacity-90">HexChess</h1>
-      </div>
-
-      <div className="flex h-full w-full flex-col items-center justify-center gap-8">
-        <Button label="Quick Play" />
-        <Button label="Play with a friend" />
-      </div>
-    </main>
+          <Link
+            href={Route.FRIENDPLAY}
+            className="hex-clip flex w-2/3 max-w-[20rem] items-center justify-center"
+          >
+            <Button label="Play with a friend" />
+          </Link>
+        </>
+      }
+    />
   )
 }

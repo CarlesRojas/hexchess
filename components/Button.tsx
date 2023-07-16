@@ -16,7 +16,7 @@ const Button = ({ label, loading, disabled, ...rest }: ButtonProps) => {
     <button
       disabled={disabled || loading}
       {...rest}
-      className={`relative flex h-fit w-2/3 max-w-[20rem] select-none items-center justify-center border-none bg-primary-300 px-12 py-4 outline-none hover:bg-primary-400 ${
+      className={`hex-clip relative flex h-14 w-full select-none items-center justify-center border-none bg-gradient-to-tr from-primary-500 to-primary-300 px-12 outline-none ${
         loading ? "pointer-events-none" : ""
       } ${disabled ? "pointer-events-none opacity-40" : ""}`}
     >
@@ -28,7 +28,7 @@ const Button = ({ label, loading, disabled, ...rest }: ButtonProps) => {
         }`}
       >
         {label && (
-          <p className="whitespace-nowrap text-xl font-bold text-black">
+          <p className="whitespace-nowrap text-lg font-bold text-black">
             {label}
           </p>
         )}

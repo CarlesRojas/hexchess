@@ -40,3 +40,14 @@ svg {
 a {
   text-decoration: none;
 }
+
+.hex-clip {
+  clip-path: polygon(
+    1rem 0%,
+    calc(100% - 1rem) 0%,
+    100% 50%,
+    calc(100% - 1rem) 100%,
+    1rem 100%,
+    0% 50%
+  );
+}
