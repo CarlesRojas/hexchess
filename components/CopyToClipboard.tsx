@@ -4,7 +4,7 @@ import { Route } from "@/shared/Route"
 import Link from "next/link"
 import { useRef } from "react"
 import uuid from "react-uuid"
-import Button from "./Button"
+import Button, { ButtonType } from "./Button"
 
 const CopyToClipboard = () => {
   const gameId = useRef(uuid())
@@ -34,7 +34,7 @@ const CopyToClipboard = () => {
         href={Route.HOME}
         className="hex-clip flex w-full items-center justify-center"
       >
-        <Button label="Cancel" />
+        <Button label="Cancel" buttonType={ButtonType.SECONDARY} />
       </Link>
 
       <p

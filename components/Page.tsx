@@ -11,11 +11,11 @@ export default function Page({ top, middle, bottom }: PageProps) {
     <main className="relative grid h-screen w-screen grid-rows-[minmax(0,_6rem)_minmax(0,_1fr)_minmax(0,_1fr)]">
       {top}
 
-      <div className="relative flex h-full w-full flex-col items-center justify-center gap-4">
+      <div className="relative flex h-full w-full flex-col items-center gap-4 py-8">
         {middle}
       </div>
 
-      <div className="relative flex h-full w-full flex-col items-center justify-center gap-4">
+      <div className="relative flex h-full w-full flex-col items-center gap-4 py-16">
         {bottom}
       </div>
     </main>

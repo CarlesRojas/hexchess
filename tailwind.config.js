@@ -12,6 +12,18 @@ module.exports = {
         "primary-400": "#b48b5d",
         "primary-500": "#a47a4c",
       },
+      keyframes: {
+        scale: {
+          "0%": { transform: "scale(1)" },
+          "20%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.15)" },
+          "80%": { transform: "scale(1)" },
+          "100%": { transform: "scale(1)" },
+        },
+      },
+      animation: {
+        "scale-pulse": "scale 1.25s ease-in-out infinite",
+      },
     },
   },
   plugins: [],
