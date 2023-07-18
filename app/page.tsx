@@ -19,7 +19,9 @@ export default function Home() {
             alt="HexChess Logo"
           />
 
-          <h1 className="text-3xl font-bold opacity-90">HexChess</h1>
+          <h1 className="text-center text-3xl font-bold opacity-90">
+            HexChess
+          </h1>
         </>
       }
       bottom={

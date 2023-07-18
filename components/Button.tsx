@@ -16,7 +16,7 @@ const Button = ({ label, loading, disabled, ...rest }: ButtonProps) => {
     <button
       disabled={disabled || loading}
       {...rest}
-      className={`hex-clip relative flex h-14 w-full select-none items-center justify-center border-none bg-gradient-to-tr from-primary-500 to-primary-300 px-12 outline-none ${
+      className={`hex-clip relative flex h-14 w-full select-none items-center justify-center border-none bg-gradient-to-tr from-primary-500 to-primary-300 px-12 outline-none transition-transform hover:scale-110 hover:brightness-110 ${
         loading ? "pointer-events-none" : ""
       } ${disabled ? "pointer-events-none opacity-40" : ""}`}
     >
