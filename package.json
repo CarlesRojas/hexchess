@@ -21,6 +21,7 @@
     "drizzle-orm": "^0.27.2",
     "eslint": "8.45.0",
     "eslint-config-next": "13.4.10",
+    "lodash": "^4.17.21",
     "next": "13.4.10",
     "postcss": "8.4.26",
     "postgres": "^3.3.5",
@@ -34,6 +35,7 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.195",
     "drizzle-kit": "^0.19.5",
     "prettier": "^3.0.0",
     "prettier-plugin-tailwindcss": "^0.4.1"
