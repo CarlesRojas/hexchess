@@ -10,13 +10,13 @@ export default function HomeLoading() {
         <>
           <Image
             src="/hexchess.png"
-            className="w-1/3 max-w-[10rem]"
+            className="w-1/3 max-w-[8rem]"
             width={512}
             height={512}
             alt="HexChess Logo"
           />
 
-          <h1 className="text-center text-3xl font-bold opacity-90">
+          <h1 className="text-center text-2xl font-bold opacity-90">
             HexChess
           </h1>
         </>

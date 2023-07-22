@@ -11,13 +11,13 @@ export default function FriendPlay() {
         <>
           <Image
             src="/hexchess.png"
-            className="w-1/3 max-w-[10rem]"
+            className="w-1/3 max-w-[8rem]"
             width={512}
             height={512}
             alt="HexChess Logo"
           />
 
-          <h1 className="balanced w-4/5 max-w-[20rem] text-center text-3xl font-bold opacity-90">
+          <h1 className="balanced w-4/5 max-w-[20rem] text-center text-2xl font-bold opacity-90">
             To invite a friend, send them this link:
           </h1>
         </>

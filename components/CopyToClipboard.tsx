@@ -24,7 +24,7 @@ const CopyToClipboard = () => {
   }
 
   return (
-    <div className="flex w-2/3 max-w-[20rem] flex-col items-center justify-center gap-4">
+    <div className="flex w-3/4 max-w-[20rem] flex-col items-center justify-center gap-4">
       <p className="whitespace-pre-wrap text-center text-sm font-bold opacity-50">
         {url}
       </p>

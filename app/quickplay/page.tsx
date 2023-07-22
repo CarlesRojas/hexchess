@@ -13,13 +13,13 @@ export default function QuickPlay() {
         <>
           <Image
             src="/hexchess.png"
-            className="w-1/3 max-w-[10rem] animate-scale-pulse"
+            className="w-1/3 max-w-[8rem] animate-scale-pulse"
             width={512}
             height={512}
             alt="HexChess Logo"
           />
 
-          <h1 className="text-center text-3xl font-bold opacity-90">
+          <h1 className="text-center text-2xl font-bold opacity-90">
             Looking for an opponent...
           </h1>
         </>
@@ -28,7 +28,7 @@ export default function QuickPlay() {
         <>
           <Link
             href={Route.HOME}
-            className="hex-clip flex w-2/3 max-w-[20rem] items-center justify-center"
+            className="hex-clip flex w-3/4 max-w-[20rem] items-center justify-center"
           >
             <Button label="Cancel" buttonType={ButtonType.SECONDARY} />
           </Link>
